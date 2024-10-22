@@ -30,14 +30,17 @@ public class Main {
                     if(hashSet.contains(0)){
                         System.out.println("입력하신 숫자중에 0이 있습니다. 다시입력해주세요");
                         sc.nextLine();
+                        continue;
                     }else if(hashSet.size() != 3){
                         System.out.println("입력하신 숫자중에 중복이 있습니다. 다시입력해주세요");
                         sc.nextLine();
+                        continue;
                     }
                 }
             } catch (Exception e) {
                 System.out.println("올바르지 못한 입력입니다.");
                 sc.nextLine();
+                continue;
             }
 
             play = baseBall.play(mynum);
