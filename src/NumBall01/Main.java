@@ -6,6 +6,7 @@ public class Main {
         // 값 입력을 위한 스캐너 객체 생성
         Scanner sc = new Scanner(System.in);
         BaseBall baseBall = new BaseBall();  //야구 게임 생성
+        boolean play = true;
 
         int mynum = 0;
         System.out.println(" < 게임을 시작합니다 >");
@@ -39,11 +40,11 @@ public class Main {
                 sc.nextLine();
             }
 
-
-
-
-
-        }while(true);
+            play = baseBall.play(mynum);
+            if(play == false){
+                System.out.println("정답입니다!");
+            }
+        }while(play);
 
     }
 }
