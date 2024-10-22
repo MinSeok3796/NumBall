@@ -36,8 +36,11 @@ public class BaseBall {
                 }
             }
         }
-        System.out.println(strike + "스트라이크 " + ball + "볼입니다.");
-
+        if(strike == 3){
+            System.out.println("아웃입니다.");
+        }else {
+            System.out.println(strike + "스트라이크 " + ball + "볼입니다.");
+        }
         return num != answer;
     }
 
